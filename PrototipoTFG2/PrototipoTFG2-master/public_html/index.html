@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Prototipo para el proyecto 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/icheck-bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="wrap">
+
+            <h1>Jumping</h1>
+            <img id="logo" src="img/casco.jpg">
+            <!-- Reloj -->
+            <div class="wrap">
+                <div class="widget">
+                    <div class="fecha">
+                        <p id="diaSemana" class="diaSemana"></p>
+                        <p id="dia" class="dia"></p>
+                        <p>de </p>
+                        <p id="mes" class="mes"></p>
+                        <p>del </p>
+                        <p id="year" class="year"></p>
+                    </div>
+                    <div class="reloj">
+                        <p id="horas" class="horas"></p>
+                        <p>:</p>
+                        <p id="minutos" class="minutos"></p>
+                        <p>:</p>
+                        <div class="caja-segundos">
+                            <p id="ampm" class="ampm"></p>
+                            <p id="segundos" class="segundos"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <!-- Tablón ejercicios -->
+            <h4>Selecciona programa de ejercicios</h4>
+            <select id="programas" name="program" onchange="seleccionarPrograma()">
+                <option value="Iron Man">Iron Man</option>
+                <option value="Military Fit">Military Fit</option>
+                <option value="Boxer Prime">Broxer Prime</option>
+            </select>
+            <br/>
+            <br/>
+            <h2 id="tituloPrograma"></h2>
+            <br/>
+            <div class="box">
+                <h4 id="diaTitulo"></h4>
+                <br/>
+                <ul id="tablaEjercicios">
+
+                </ul>
+            </div>
+
+        <script src="js/programa.js"></script>
+    </body>
+</html>
